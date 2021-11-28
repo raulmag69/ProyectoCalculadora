@@ -28,18 +28,51 @@ public class frmAutor extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        lblNombreCompleto = new javax.swing.JLabel();
+        lblGrupoSemestre = new javax.swing.JLabel();
+        lblFecha = new javax.swing.JLabel();
+        lblVersion = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        setForeground(java.awt.Color.gray);
+
+        lblNombreCompleto.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblNombreCompleto.setText("Nombre Completo: Raul Magaña de Jesus");
+
+        lblGrupoSemestre.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblGrupoSemestre.setText("Grupo y semestre: Programacion 3B");
+
+        lblFecha.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblFecha.setText("Fecha:");
+
+        lblVersion.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblVersion.setText("Version: 1.0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblNombreCompleto)
+                    .addComponent(lblGrupoSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblVersion, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(lblNombreCompleto, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblGrupoSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(lblFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(lblVersion, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         pack();
@@ -82,5 +115,9 @@ public class frmAutor extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JLabel lblFecha;
+    private javax.swing.JLabel lblGrupoSemestre;
+    private javax.swing.JLabel lblNombreCompleto;
+    private javax.swing.JLabel lblVersion;
     // End of variables declaration//GEN-END:variables
 }
