@@ -117,7 +117,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnCuadrado.setBackground(new java.awt.Color(204, 204, 204));
         btnCuadrado.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnCuadrado.setForeground(new java.awt.Color(51, 51, 51));
-        btnCuadrado.setText("x¨2");
+        btnCuadrado.setText("x^2");
         btnCuadrado.setAutoscrolls(true);
         btnCuadrado.setMinimumSize(new java.awt.Dimension(23, 23));
         btnCuadrado.addActionListener(new java.awt.event.ActionListener() {
@@ -149,7 +149,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnXY.setBackground(new java.awt.Color(204, 204, 204));
         btnXY.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnXY.setForeground(new java.awt.Color(51, 51, 51));
-        btnXY.setText("x¨y");
+        btnXY.setText("x^y");
         btnXY.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnXYActionPerformed(evt);
