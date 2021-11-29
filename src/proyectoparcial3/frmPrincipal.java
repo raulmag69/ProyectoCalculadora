@@ -773,16 +773,19 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void rbBinarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbBinarioActionPerformed
         rbOctal.setSelected(false);
         rbHexadecimal.setSelected(false);
+        txtResultados.setText(Integer.toBinaryString(Integer.parseInt(txtResultados.getText())));
     }//GEN-LAST:event_rbBinarioActionPerformed
 
     private void rbHexadecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbHexadecimalActionPerformed
         rbBinario.setSelected(false);
         rbOctal.setSelected(false);
+        txtResultados.setText(Integer.toHexString(Integer.parseInt(txtResultados.getText())));
     }//GEN-LAST:event_rbHexadecimalActionPerformed
 
     private void rbOctalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbOctalActionPerformed
         rbHexadecimal.setSelected(false);
         rbBinario.setSelected(false);
+        txtResultados.setText(Integer.toOctalString(Integer.parseInt(txtResultados.getText())));
     }//GEN-LAST:event_rbOctalActionPerformed
 
     /**
