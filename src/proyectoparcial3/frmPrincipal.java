@@ -714,7 +714,7 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void btnLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogActionPerformed
         double valor,log;
         valor = Double.parseDouble(txtResultados.getText());
-        log = Math.log(valor);
+        log = Math.log10(valor);
         txtResultados.setText(String.valueOf(log));
     }//GEN-LAST:event_btnLogActionPerformed
 
