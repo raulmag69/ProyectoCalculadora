@@ -43,7 +43,7 @@ public class frmAutor extends javax.swing.JFrame {
         lblGrupoSemestre.setText("Grupo y semestre: Programacion 3B");
 
         lblFecha.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblFecha.setText("Fecha:");
+        lblFecha.setText("Fecha: 03/12/21");
 
         lblVersion.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblVersion.setText("Version: 1.0");
